@@ -66,8 +66,8 @@ These are flags that can be used to reduce the functionality of bot
 
 - `PROCESS_IMAGE`: Process attached images
 - `PROCESS_TEXT_ATTACHMENTS` Process PDF and txt attachments
-- `PROCESS_URL` Scrape urls and process them
-- `PROCESS_YOUTUBE_URLS` Scrape youtube transcripts and process them
+- `PROCESS_URL` Scrape urls and process them (setting this to `False` this will also disable youtube urls)
+- `PROCESS_YOUTUBE_URLS` Scrape youtube transcripts and process them 
 
 3. Run `OpenAI_Assistant_DiscordBot.py`
 
