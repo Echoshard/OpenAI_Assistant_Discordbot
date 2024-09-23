@@ -1,0 +1,8 @@
+discord.py
+openai
+aiohttp
+python-dotenv
+youtube-transcript-api
+PyMuPDF
+requests
+beautifulsoup4
