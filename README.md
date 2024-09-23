@@ -57,7 +57,7 @@ The bot will start listening to messages in your Discord server. It only respond
 
 - `DISCORD_BOT_TOKEN`: Your Discord bot token
 - `OPENAI_API_KEY`: Your OpenAI API key. OpenAI Key can be acquired from https://platform.openai.com/assistants/
-- `MAX_TOKENS`: max amount of tokens it can respond with
+- `MAX_TOKENS`: Max amount of tokens it can respond with less tokens usually means faster response
 - `DEFAULT_ASSISTANT`:Default assistant it will speak with you setup your assistant here https://platform.openai.com/assistants/
 
 Bot Settings:
