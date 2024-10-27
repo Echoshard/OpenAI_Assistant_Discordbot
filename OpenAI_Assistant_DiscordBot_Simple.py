@@ -106,11 +106,24 @@ def clean_discord_message(input_string):
 
     return cleaned_content  
 
-def split_string(string, max_length = 1700):
+def split_string(string, max_length=1700):
     messages = []
-    for i in range(0, len(string), max_length):
-        sub_message = string[i:i+max_length]
-        messages.append(sub_message)
+    start = 0
+
+    while start < len(string):
+        # Find the endpoint within max_length or to the end of string
+        end = min(start + max_length, len(string))
+
+        # If end isn't at the end of the string, backtrack to the last space
+        if end < len(string) and string[end] != ' ':
+            end = string.rfind(' ', start, end)
+            if end == -1:
+                end = min(start + max_length, len(string))  # Fallback in case there's no space
+
+        # Append the substring to messages and update the start position
+        messages.append(string[start:end].strip())
+        start = end
+
     return messages
 
 async def send_messages(messageSystem,output):
