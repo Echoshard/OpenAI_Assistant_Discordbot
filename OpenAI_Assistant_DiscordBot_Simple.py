@@ -14,11 +14,10 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix='!', description="Simple AI Assistant", intents=intents)
 
-# Your API Key stuff 
-default_assistant = "Assistant"
 
-DISCORD_API_KEY = "Discord API KEY"
-OPENAI_API_KEY = "API KEY"
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+default_assistant = os.getenv("DEFAULT_ASSISTANT")
+DISCORD_KEY = os.getenv("DISCORD_KEY")
 
 user_threads = {}
 
