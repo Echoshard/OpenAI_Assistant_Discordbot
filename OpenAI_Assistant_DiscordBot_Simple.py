@@ -18,6 +18,7 @@ bot = commands.Bot(command_prefix='!', description="Simple AI Assistant", intent
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 default_assistant = os.getenv("DEFAULT_ASSISTANT")
 DISCORD_KEY = os.getenv("DISCORD_KEY")
+MAX_TOKENS = int(os.getenv("MAX_TOKENS"))
 
 user_threads = {}
 
@@ -85,6 +86,7 @@ async def get_gpt_assistant(user_input,my_thread):
         with client.beta.threads.runs.stream(
             thread_id=my_thread,
             assistant_id=default_assistant,
+            max_completion_tokens=MAX_TOKENS
             #instructions="Please address the user as Jane Doe. The user has a premium account." #Instructions should be in the Assistant
         ) as stream:
             for text in stream.text_deltas:
