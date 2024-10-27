@@ -17,7 +17,7 @@ bot = commands.Bot(command_prefix='!', description="Simple AI Assistant", intent
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 default_assistant = os.getenv("DEFAULT_ASSISTANT")
-DISCORD_KEY = os.getenv("DISCORD_KEY")
+DISCORD_API_KEY = os.getenv("DISCORD_KEY")
 MAX_TOKENS = int(os.getenv("MAX_TOKENS"))
 
 user_threads = {}
