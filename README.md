@@ -104,3 +104,7 @@ Youtube Videos:
 
 - Transcripts of age restricted or other block content cannot be read
 - The youtube transcriber does work on some servers with static IP's they are blocked by youtube.
+
+## Simple Version
+
+- The simple version contains stripped down code it can only respond it cannot do URLs or images great for a quick AI expert
