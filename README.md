@@ -107,4 +107,4 @@ Youtube Videos:
 
 ## Simple Version
 
-- The simple version contains stripped down code it can only respond it cannot do URLs or images great for a quick AI expert
+- The simple version contains stripped down code it can only respond it cannot do URLs or images great for a quick AI expert, it uses the same .env
