@@ -1,3 +1,5 @@
+#This is a simplified version it does not have any scraping or image capablities 
+
 ﻿import requests
 import re
 import openai
